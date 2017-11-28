@@ -7,15 +7,21 @@
 # 使用方法
 
 // 対象フォルダ
+
 String targetFolder = "/Users/CC/git/testhelper/src/main/java";
 
 // 置換定義（FROM->TO）
+
 List<ReplacementDefine> defines = new ArrayList<ReplacementDefine>();
+
 defines.add(new ReplacementDefine("sparkworks", "sparkworks123"));
+
 defines.add(new ReplacementDefine("public", "PUBLIC"));
 
 // doooooooooooo
+
 ReplacementHelper.replace(targetFolder, defines);
 
 それで、
+
 プロジェクトのoutputフォルダが作成され、中に中身が置換されたファイルが出力される
